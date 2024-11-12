@@ -1,5 +1,4 @@
 # Note Taking Journal
-#### Video Demo:  https://youtu.be/xDwk_c9P7-Q
 #### Description:
 
 # Personal Journal Web App
