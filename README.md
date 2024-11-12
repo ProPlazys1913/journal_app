@@ -84,7 +84,7 @@ This file provides basic styling to enhance readability and usability. It styles
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/journal_app.git
+   git clone https://github.com/ProPlazys1913/journal_app.git
    cd journal_app
    ```
 
@@ -93,17 +93,10 @@ This file provides basic styling to enhance readability and usability. It styles
    ```bash
    pip install flask
    ```
-
-3. **Initialize the Database**:
-   Run the app once to initialize the database:
-   ```bash
-   python app.py
-   ```
-
 4. **Run the Application**:
    Start the app with:
    ```bash
-   python app.py
+   flask run
    ```
    The app will be accessible at `http://127.0.0.1:5000`.
 
