@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Your Journal Entries</h2>
+<a href="{{ url_for('entry') }}">Create New Entry</a>
+
+<ul>
+    {% for entry in entries %}
+        <li>
+            <h3>{{ entry[2] }} <small>({{ entry[4] }})</small></h3>
+            <p>{{ entry[3] }}</p>
+            <a href="{{ url_for('edit_entry', entry_id=entry[0]) }}">Edit</a>
+            <form action="{{ url_for('delete_entry', entry_id=entry[0]) }}" method="POST" style="display: inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
